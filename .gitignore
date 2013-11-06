@@ -1,9 +1,2 @@
-<<<<<<< HEAD
-.gitignore
-composer.*
-vendor/*
-
-=======
 vendor/
 composer.lock
->>>>>>> development

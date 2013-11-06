@@ -2,10 +2,10 @@
 namespace SigTest\Command;
 
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputArgument as InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Output\OutputInterface as OutputInterface;
 
 class WorkCommand extends Command
 {	
@@ -18,15 +18,15 @@ class WorkCommand extends Command
     {
 
         $this->setName('work')
-		     ->setDescription('Work Command. DANGEROUS! Do not execute without first reading the code!')
+             ->setDescription('Work Command. Be careful when executing!')
 		     ->setHelp('Work');
 
 		return;
 	}
 
 
-    protected function execute(\Symfony\Component\Console\Input\InputInterface $input, 
-							   \Symfony\Component\Console\Output\OutputInterface $output)
+    protected function execute(InputInterface $input, 
+							   OutputInterface $output)
 	{
 		$this->pid = getmypid();
 

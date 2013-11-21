@@ -18,7 +18,8 @@ class WorkCommand extends Command
         $this->setName('work')
              ->setDescription('Work Command. Be careful when executing!')
 		     ->setHelp('Work');
-
+    }
+    
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $this->pid = getmypid();

@@ -11,7 +11,7 @@ class WorkCommand extends Command
 
     protected $continueFlag = true;
     protected $pid = null;
-    protected $pifFileLocation = '../';
+    protected $pidFileLocation = '../';
 
     protected function configure()
     {
@@ -74,7 +74,7 @@ class WorkCommand extends Command
     {
         $pidFile = $this->getName() . '.pid';
 
-        return $this->pifFileLocation . $pidFile;
+        return $this->pidFileLocation . $pidFile;
     }
 
     protected function setPidFile()
